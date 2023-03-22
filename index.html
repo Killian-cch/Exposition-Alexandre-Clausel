@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -7,38 +7,102 @@
     <title>Vite App</title>
 </head>
 <body>
+    <section id="accueil">
+        <header class="d-flex justify-content-center">
+            <div class="bar"></div>
+            <a class="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasmenu">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </a>
 
-    <section id="Accueil">
-		<div class="container">
-			<div class="grid">
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-			</div>
-			<div class="subgrid">
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-				<div class="cell"><img src="assets/motif.svg" alt="motif"></div>
-			</div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasmenu">
+                <div class="offcanvas-header">
+                  	<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+					<a href="#accueil">
+						<i class="fa-solid fa-house"></i>
+						Accueil
+					</a>
+					<a href="#introduction">
+						<i class="fa-solid fa-lightbulb"></i>
+						Introduction
+					</a>
+                </div>
+				<img class="motif-offcanvas" src="assets/motif2.svg" alt="Motif">
+            </div>
+        </header>
+		
+		<div class="wrapper">
+			<h1 class="title">
+				Alexandre
+				<br>
+				Clausel,
+				<br>
+				<span class="last-word">photographe</span>
+				<br>
+				<span class="small">: Les paysages urbains de Troyes</span>
+			</h1>
+
+			<img class="motif" src="assets/motif.svg" alt="Motif">
 		</div>
+
+        <a class="next-view" href="#introduction"><img class="icon" src="assets/arrow-down.svg" alt="Continuer"></a>
+    </section>
+
+    <section id="introduction">
+        <div class="title-zone">
+            <div class="motif motif1"></div>
+            <div class="motif motif2"></div>
+            <div class="motif motif3"></div>
+            <div class="motif motif4"></div>
+
+            <h2>
+                Introduction
+            </h2>
+            <img class="tableau" src="assets/tableau.png" alt="Tableau d'Alexandre Clausel">
+        </div>
+
+        <div class="intro-content">
+            <h3>Alexandre Clausel</h3>
+            <p class="m-0">
+                Troyes, comme la plupart des autres villes, a subi beaucoup de transformations dans son paysage au cours de son histoire. Ces transformations ont notamment été documentées par Alexandre Clausel (1802-1884), photographe, peintre et dessinateur troyen. Au XIXème siècle, les peintres et chimistes s'emparent de la photographie et cherchent à améliorer les techniques. Dans la suite de Gustave Le Gray, Alexandre Clausel utilise le négatif sur collodion humide et les tirages sur papier salé et albuminé. Cela résulte à plus de 400 photographies et négatifs sur verre, pris entre 1852 et 1854, conservés au musée des Beaux-Arts de la ville de Troyes. Grâce à la numérisation de ce fonds, il est possible aujourd'hui d'exposer virtuellement ces photographies, trop fragiles pour être présentées autrement. Ainsi, cette exposition virtuelle vous invite à découvrir la ville de Troyes au XIXème siècle, à travers ses édifices religieux et civils, ses fortifications et son architecture.
+            </p>
+        </div>
+        
+    </section>
+
+    <section id="les-fortifications">
+        <div class="title-zone"> 
+            <div class="motif motif1"></div>
+            <div class="motif motif2"></div>
+            <div class="motif motif3"></div>
+            <h2>
+                Les fortifications
+            </h2>
+            <img src="assets/motif3.svg" alt="Motif">
+        </div>
+
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <p class="white-p">
+                            Au milieu du XIXème siècle, les fortifications médiévales de Troyes ne sont plus que des ruines. Elles n'ont plus d'utilité militaire, elles sont donc détruites au fur et à mesure du temps. Alexandre Clausel photographie les derniers remparts qui subsistent au début des années 1850.
+                            <br><br>Ces fortifications empêchent l'expansion de la ville qui s'agrandit rapidement à cette époque, du fait de l'industrialisation mais aussi du courant hygiéniste qui gagne la plupart des grandes villes.
+                            <br><br>On trouve notamment d'anciennes portes, ponts et tours qui parsèment le pourtour du bouchon et qui délimitaient autrefois les limites de la cité tricasse.
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-12 motif-4">
+                        <img class="" src="assets/motif4.svg" alt="Motif">
+                    </div>
+                </div>
+            </div>
+            
+            <img src="" alt="">
+        </div>
+        
     </section>
 
     <script type="module" src="/main.js"></script>
