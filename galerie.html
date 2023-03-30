@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerie</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./galerie_style.css">
+</head>
+<body>
+    <section id="accueil">
+        <header class="d-flex justify-content-center">
+            <div class="bar"></div>
+            <a class="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasmenu">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </a>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasmenu">
+                <div class="offcanvas-header">
+                  	<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+					<a href="#accueil">
+						<i class="fa-solid fa-house"></i>
+						Accueil
+					</a>
+                </div>
+				<img class="motif-offcanvas" src="assets/motif2.svg" alt="Motif">
+            </div>
+        </header>
+		<div class="wrapper">
+			<h1 class="title">
+				Galerie
+			</h1>
+
+			<img class="motif" src="assets/motif.svg" alt="Motif">
+		</div>
+
+        <a class="next-view" href="#galerie"><img class="icon" src="assets/arrow-down.svg" alt="Continuer"></a>
+    </section>
+
+    <section id="galerie">
+        <h2>Galerie</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://picsum.photos/id/684/600/400" alt=""></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/684/600/400" alt=""></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/684/600/400" alt=""></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/684/600/400" alt=""></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/684/600/400" alt=""></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/684/600/400" alt=""></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/684/600/400" alt=""></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/684/600/400" alt=""></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/684/600/400" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        
+        <img class="motif3" src="assets/motif5.svg" alt="Motif">
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+     <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween:-100,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+        });
+    </script>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
